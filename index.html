@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/601af27d4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ----------text editor start------------ -->
+    <section class="editor-container min-h-screen rounded-md pt-12" id="section">
+        <div class="editor-title h-2/4 rounded-lg bg-lime-500 w-1/2 mx-auto pb-8">
+            <h1 class="text-5xl text-center py-8 text-slate-800">My Text Editor</h1>
+            <div class="editor-body w-9/12	mx-auto p-4 pb-6 border-2 bg-red-600 border-slate-800">
+                <div class="editor flex mb-6 items-center">
+                    <div class="icons">
+                        <i class="text-slate-800 fa-solid fa-bold px-3 py-3" id="bold"></i>
+                        <i class="text-slate-800 fa-solid fa-italic px-3 py-3" id="italic"></i>
+                        <i class="text-slate-800 fa-solid fa-underline px-3 py-3" id="underline"></i>
+                    </div>
+                    <div class="align-icons mx-auto">
+                        <i class="text-white fa-solid fa-align-left ml-4" id="text-left"></i>
+                        <i class="text-slate-800 fa-solid fa-align-center ml-4" id="text-center"></i>
+                        <i class="text-slate-800 fa-solid fa-align-right ml-4" id="text-right"></i>
+                    </div>
+                    <div class="inputs flex gap-3">
+                        <input type="number" name="" id="number" class="w-14 pl-2 font-medium bg-pink-200" placeholder="16">
+                        <p class="text-lg font-medium text-slate-800 cursor-pointer" id="p">aA</p>
+                        <input type="color" name="" id="color">
+                    </div>
+                </div>
+                <hr class="bg-slate-800 h-1 border-0">
+                <div class="single-line"></div>
+                <textarea name="" class="h-60 w-full mt-7 px-2 pt-2 focus:outline-none bg-slate-100 rounded" id="textarea"></textarea>
+            </div>
+        </div>
+    </section>
+    <script src="js/utilities.js"></script>
+    <script src="js/editor.js"></script>
+</body>
+</html>
