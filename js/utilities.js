@@ -60,6 +60,7 @@ function bothInput(id, type){
         values.value;
         if(id == "number"){
             document.getElementById(id).setAttribute("value", "16");
+            if(input.value < 0) input.value = 0;
             return values.style.fontSize = input.value + "px";
         }
         return values.style.color = input.value;
